@@ -1032,7 +1032,7 @@ void findLateGroups() {
 
            string state = getSubmissionState(group.groupNumber, project.projectNumber, getCurrentDate());
 
-           if (state == "Not submitted" || state == "Late") {
+           if (state == "Not submitted" || state == "Not yet submitted" || state == "Late") {
 
                incompleteOrLate = true;
 
